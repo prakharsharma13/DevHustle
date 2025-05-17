@@ -1,18 +1,11 @@
 import React, { useState } from "react";
-import {
-  Menu,
-  Code,
-  CheckCircle,
-  Star,
-  Search,
-  ArrowLeft,
-  ArrowRight,
-  Filter,
-} from "lucide-react";
+
 import Header from "./Header";
 import HeroSection from "./HeroSection";
 import PracticeQuestions from "./PracticeQuestions";
 import SearchFilter from "./SearchFilter";
+import ProblemsTable from "./ProblemsTable";
+import Pagination from "./Pagination";
 
 const CodeMaster = () => {
   const [darkMode] = useState(true);
@@ -143,6 +136,8 @@ const CodeMaster = () => {
       <HeroSection />
       <PracticeQuestions />
       <SearchFilter />
+      <ProblemsTable problems={problems} />
+      <Pagination />
     </div>
   );
 };
