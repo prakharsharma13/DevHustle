@@ -1,7 +1,12 @@
 import React from "react";
+import CodeMaster from "./components/CodeMaster";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <CodeMaster />
+    </>
+  );
 };
 
 export default App;
